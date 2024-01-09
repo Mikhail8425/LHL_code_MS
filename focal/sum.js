@@ -1,7 +1,8 @@
-const args = process.argv;
+const args = process.argv.slice(2);
 
-for (let j = 2; j < process.argv.length; j++) {
-    console.log(j + ' -> ' + (process.argv[j]));
+let x = 0;
+for (arg of args) {
+    x += Number(arg);
 }
 
-console.log(args);
+console.log(x);
