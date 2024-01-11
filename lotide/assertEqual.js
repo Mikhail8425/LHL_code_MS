@@ -5,9 +5,7 @@ console.assert(1 === 1.1); // => prints out "Assertion failed" to the terminal
 // FUNCTION IMPLEMENTATION
 const assertEqual = function(actual, expected) {
   if (actual == expected) {
-    console.log(`${actual}` + `${expected}`)
-  } else {
-    console.log(false)
+    console.log(actual == expected)
   } 
 };
 
